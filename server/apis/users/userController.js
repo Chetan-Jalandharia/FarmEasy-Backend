@@ -36,7 +36,7 @@ const sendMail = (token, email) => {
         to: email,
         subject: 'Email Verification FarmEasy',
 
-        html: `<a href="http://localhost:5173/user/verify?id=${token}">Click to verify your Email_ID</a>`
+        html: `<a href="https://farmeasy-fa062.web.app/user/verify?id=${token}">Click to verify your Email_ID</a>`
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
