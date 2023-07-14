@@ -24,6 +24,10 @@ app.use('/user', userRoute)
 const customerRoute = require('./routes/customerRoute')
 app.use('/customer', customerRoute)
 
+app.get("/", (req, res) => {
+    res.send("Welcome to server")
+})
+
 app.get("/*", (req, res) => {
     res.send("404 Not Found")
 })
